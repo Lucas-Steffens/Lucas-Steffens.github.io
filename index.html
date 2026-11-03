@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Portfólio de BI e analytics de Lucas Steffens, Curitiba. BI and analytics portfolio.">
+<meta name="description" content="Portfólio de BI e análise de dados de Lucas Steffens, Curitiba. BI and data analysis portfolio.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Lucas Steffens | BI e Analytics">
+<meta property="og:title" content="Lucas Steffens | BI e Análise de Dados">
 <meta property="og:description" content="Dashboards e relatórios automatizados. Dashboards and automated reports.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B6A8A'/%3E%3Ctext x='16' y='22' font-size='15' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3ELS%3C/text%3E%3C/svg%3E">
-<title>Lucas Steffens | BI e Analytics</title>
+<title>Lucas Steffens | BI e Análise de Dados</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: texto e ficha técnica no topo, fluxo de dados como eixo da página, casos em duas colunas (texto + captura de tela). Idioma por atributo data-ui no html. */
@@ -480,7 +480,7 @@ h2 {
   display: grid;
   grid-template-columns: 7rem minmax(0, 1fr);
   gap: 1rem;
-  align-items: baseline;
+  align-items: center;
 }
 .contact dt {
   font-family: var(--font-mono);
@@ -489,7 +489,9 @@ h2 {
   text-transform: uppercase;
   color: var(--muted);
 }
-.contact dd { margin: 0; font-size: 1.1rem; font-weight: 500; overflow-wrap: anywhere; }
+.contact dd { margin: 0; display: flex; align-items: center; gap: 0.7rem; min-width: 0; font-size: 1.1rem; font-weight: 500; overflow-wrap: anywhere; }
+.contact dd > a, .contact dd > span { min-width: 0; }
+.ico { flex: none; width: 1.25rem; height: 1.25rem; color: var(--accent); }
 
 footer {
   padding-top: 1.25rem;
@@ -549,6 +551,7 @@ footer {
         <a href="#competencias"><span lang="pt-BR">Competências</span><span lang="en">Skills</span></a>
         <a href="#projetos"><span lang="pt-BR">Projetos</span><span lang="en">Projects</span></a>
         <a href="#experiencia"><span lang="pt-BR">Experiência</span><span lang="en">Experience</span></a>
+        <a href="#formacao"><span lang="pt-BR">Formação</span><span lang="en">Education</span></a>
         <a href="#contato"><span lang="pt-BR">Contato</span><span lang="en">Contact</span></a>
       </nav>
       <div class="lang" role="group" aria-label="Idioma / Language">
@@ -560,14 +563,14 @@ footer {
 
   <section class="hero" aria-labelledby="titulo">
     <div>
-      <p class="label">Lucas Eduardo Steffens · Curitiba, PR</p>
+      <p class="label">Lucas Eduardo Steffens · Curitiba, PR, <span lang="pt-BR">Brasil</span><span lang="en">Brazil</span></p>
       <h1 id="titulo">
         <span lang="pt-BR">Dashboards que a área usa e relatórios que chegam sozinhos.</span>
         <span lang="en">Dashboards that teams actually use, and reports that arrive on their own.</span>
       </h1>
       <p class="lead">
-        <span lang="pt-BR">Sou analista de inteligência de mercado e trabalho com Qlik Sense e NPrinting. Construo painéis, automatizo relatórios e entrego a informação certa para quem decide, no horário combinado.</span>
-        <span lang="en">I am a market intelligence analyst working with Qlik Sense and NPrinting. I build dashboards, automate reports and get the right information to decision makers, right on schedule.</span>
+        <span lang="pt-BR">Atualmente sou analista de inteligência de mercado e trabalho com Qlik Sense e NPrinting. Analiso dados, construo painéis, automatizo relatórios e entrego a informação certa para quem decide, no horário combinado.</span>
+        <span lang="en">I am currently a market intelligence analyst working with Qlik Sense and NPrinting. I analyze data, build dashboards, automate reports and get the right information to decision makers, right on schedule.</span>
       </p>
       <div class="actions">
         <a class="btn primary" href="#projetos"><span lang="pt-BR">Ver projetos</span><span lang="en">View projects</span></a>
@@ -581,7 +584,7 @@ footer {
       </div>
       <div>
         <dt><span lang="pt-BR">Foco</span><span lang="en">Focus</span></dt>
-        <dd><span lang="pt-BR">BI e analytics</span><span lang="en">BI and analytics</span></dd>
+        <dd><span lang="pt-BR">BI e análise de dados</span><span lang="en">BI and data analysis</span></dd>
       </div>
       <div>
         <dt><span lang="pt-BR">Experiência</span><span lang="en">Experience</span></dt>
@@ -597,7 +600,7 @@ footer {
       </div>
       <div>
         <dt><span lang="pt-BR">Local</span><span lang="en">Location</span></dt>
-        <dd>Curitiba, PR</dd>
+        <dd><span lang="pt-BR">Curitiba, PR, Brasil</span><span lang="en">Curitiba, PR, Brazil</span></dd>
       </div>
     </dl>
   </section>
@@ -656,6 +659,13 @@ footer {
           <p class="desc"><span lang="pt-BR">Integração, tratamento e modelagem de dados.</span><span lang="en">Data integration, cleaning and modeling.</span></p>
         </div>
       </div>
+      <div class="skill">
+        <h3><span lang="pt-BR">Suporte a usuários</span><span lang="en">User support</span></h3>
+        <div>
+          <p class="items"><span lang="pt-BR">Suporte a usuários de BI e CRM</span><span lang="en">Support for BI and CRM users</span></p>
+          <p class="desc"><span lang="pt-BR">Apoio no dia a dia a quem usa painéis, relatórios e o CRM.</span><span lang="en">Day-to-day help for people who use dashboards, reports and the CRM.</span></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -703,7 +713,7 @@ footer {
           <dl class="case-dl">
             <div>
               <dt><span lang="pt-BR">Contexto</span><span lang="en">Context</span></dt>
-              <dd><span lang="pt-BR">Eram clientes de 15 unidades de negócio, e para cada um eram 45 slides em PowerPoint e 15 abas de Excel, preenchidos manualmente todo mês para as empresas que iriam negociar o reajuste do plano de saúde com a Unimed. O trabalho consumia cerca de 700 horas por mês e estava sujeito a erros.</span><span lang="en">The clients came from 15 business units, and for each one there were 45 PowerPoint slides and 15 Excel tabs, filled in manually every month for the companies about to negotiate their health plan adjustment with Unimed. The work took about 700 hours per month and was prone to errors.</span></dd>
+              <dd><span lang="pt-BR">Eram clientes de 15 unidades de negócio, e para cada um eram 45 slides em PowerPoint e 15 abas de Excel, preenchidos manualmente todo mês para as empresas que iriam negociar o reajuste anual do contrato com a unidade. O trabalho consumia cerca de 700 horas por mês e estava sujeito a erros.</span><span lang="en">The clients came from 15 business units, and for each one there were 45 PowerPoint slides and 15 Excel tabs, filled in manually every month for the companies about to negotiate their annual contract adjustment with the business unit. The work took about 700 hours per month and was prone to errors.</span></dd>
             </div>
             <div>
               <dt><span lang="pt-BR">O que fiz</span><span lang="en">What I did</span></dt>
@@ -758,9 +768,8 @@ footer {
   </section>
 
   <section id="experiencia" aria-labelledby="t-exp">
-    <h2 id="t-exp"><span lang="pt-BR">Experiência e formação</span><span lang="en">Experience and education</span></h2>
+    <h2 id="t-exp"><span lang="pt-BR">Experiência</span><span lang="en">Experience</span></h2>
 
-    <h3 class="sub-title first"><span lang="pt-BR">Experiência profissional</span><span lang="en">Professional experience</span></h3>
     <div class="exp-list">
       <div class="exp">
         <div class="when"><span lang="pt-BR">07/2024 até hoje</span><span lang="en">07/2024 to present</span></div>
@@ -812,8 +821,12 @@ footer {
         </div>
       </div>
     </div>
+  </section>
 
-    <h3 class="sub-title"><span lang="pt-BR">Formação acadêmica</span><span lang="en">Education</span></h3>
+  <section id="formacao" aria-labelledby="t-form">
+    <h2 id="t-form"><span lang="pt-BR">Formação e certificações</span><span lang="en">Education and certifications</span></h2>
+
+    <h3 class="sub-title first"><span lang="pt-BR">Formação acadêmica</span><span lang="en">Education</span></h3>
     <div class="exp-list">
       <div class="exp">
         <div class="when"><span lang="pt-BR">Conclusão 09/2026</span><span lang="en">Completion 09/2026</span></div>
@@ -871,17 +884,18 @@ footer {
   <section id="contato" aria-labelledby="t-contato">
     <h2 id="t-contato"><span lang="pt-BR">Contato</span><span lang="en">Contact</span></h2>
     <p class="sec-intro">
-      <span lang="pt-BR">Aberto a conversar sobre vagas de BI e analytics.</span>
-      <span lang="en">Open to conversations about BI and analytics roles.</span>
+      <span lang="pt-BR">Aberto a conversar sobre vagas de BI e análise de dados.</span>
+      <span lang="en">Open to conversations about BI and data analysis roles.</span>
     </p>
     <dl class="contact">
-      <div><dt><span lang="pt-BR">E-mail</span><span lang="en">Email</span></dt><dd><a href="mailto:lucasedsteffens@gmail.com">lucasedsteffens@gmail.com</a></dd></div>
-      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/lucas-steffens-73092b170/" target="_blank" rel="noopener">linkedin.com/in/lucas-steffens-73092b170</a></dd></div>
-      <div><dt><span lang="pt-BR">Local</span><span lang="en">Location</span></dt><dd>Curitiba, PR</dd></div>
+      <div><dt><span lang="pt-BR">E-mail</span><span lang="en">Email</span></dt><dd><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:lucasedsteffens@gmail.com">lucasedsteffens@gmail.com</a></dd></div>
+      <div><dt><span lang="pt-BR">Telefone</span><span lang="en">Phone</span></dt><dd><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+5541996995116">(41) 99699-5116</a></dd></div>
+      <div><dt>LinkedIn</dt><dd><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/lucas-steffens-73092b170/" target="_blank" rel="noopener">linkedin.com/in/lucas-steffens-73092b170</a></dd></div>
+      <div><dt><span lang="pt-BR">Local</span><span lang="en">Location</span></dt><dd><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span lang="pt-BR">Curitiba, PR, Brasil</span><span lang="en">Curitiba, PR, Brazil</span></dd></div>
     </dl>
   </section>
 
-  <footer>Lucas Eduardo Steffens · Curitiba, PR · 2026</footer>
+  <footer>Lucas Eduardo Steffens · <span lang="pt-BR">Curitiba, PR, Brasil</span><span lang="en">Curitiba, PR, Brazil</span> · 2026</footer>
 </div>
 
 <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagem ampliada / Enlarged image">
